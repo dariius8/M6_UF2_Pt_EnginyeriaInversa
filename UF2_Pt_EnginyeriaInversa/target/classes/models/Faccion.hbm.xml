@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-ene-2020 23:47:09 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="models.Faccion" table="faccion" catalog="ForHonor" optimistic-lock="version">
+        <id name="faccionId" type="int">
+            <column name="faccion_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreFaccion" type="string">
+            <column name="nombre_faccion" length="15" />
+        </property>
+        <property name="lore" type="string">
+            <column name="lore" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>
